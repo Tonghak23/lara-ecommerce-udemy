@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home.home_master');
+    return view('home.home');
 });
 
 Route::get('/brand/list',[BrandController::class, 'list'])->name('brand.list');
@@ -27,9 +27,9 @@ Route::get('/brand/destroy/{id}', [BrandController::class, 'destroy'])->name('br
 
 
 
-// Route::get('/dashboard', function () {
-//     return view('admin.index');
-// });
+Route::get('/dashboards', function () {
+    return view('admin.index');
+});
 
 
 
