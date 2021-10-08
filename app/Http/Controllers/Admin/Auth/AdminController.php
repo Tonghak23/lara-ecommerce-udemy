@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    //
+    public function profile() {
+        return view('admin.auth.profile');
+    }
 }

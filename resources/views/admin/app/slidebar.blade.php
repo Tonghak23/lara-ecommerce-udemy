@@ -10,6 +10,16 @@
             <li class="dropdown active">
               <a href="/dashboard" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
+             <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                  data-feather="user-check"></i><span>Auth</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Login</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">Forgot Password</a></li>
+                <li><a href="">Reset Password</a></li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i
                   data-feather="briefcase"></i><span>Products</span></a>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\Products\BrandController;
+use App\Http\Controllers\Admin\Auth\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,8 @@ Route::post('/brand/update/{id}', [BrandController::class, 'update'])->name('bra
 Route::get('/brand/destroy/{id}', [BrandController::class, 'destroy'])->name('brand.destroy');
 
 
+//Profile admin
+Route::get('admin/profile',[AdminController::class, 'profile'])->name('admin.profile');
 
 Route::get('/dashboards', function () {
     return view('admin.index');
